@@ -1,0 +1,57 @@
+
+Call:
+C5.0.formula(formula = Target ~ ., data = train.cart, rules = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Sat Jan  5 16:58:44 2019
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 6575 cases (13 attributes) from undefined.data
+
+Rules:
+
+Rule 1: (995/129, lift 2.6)
+	c8 in {1, 11, 12, 7, 9}
+	->  class 0  [0.870]
+
+Rule 2: (146/51, lift 1.9)
+	c6 in {10, 12, 13, 2, 3, 4, 5}
+	c8 in {13, 15}
+	->  class 0  [0.649]
+
+Rule 3: (3447/668, lift 1.2)
+	c6 in {1, 11, 6, 7, 9}
+	->  class 1  [0.806]
+
+Rule 4: (5336/1222, lift 1.2)
+	c8 in {10, 14, 2, 3, 4, 5, 6, 8}
+	->  class 1  [0.771]
+
+Default class: 1
+
+
+Evaluation on training data (6575 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	     4 1437(21.9%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	   961  1257    (a): class 0
+	   180  4177    (b): class 1
+
+
+	Attribute usage:
+
+	 98.51%	c8
+	 54.65%	c6
+
+
+Time: 0.0 secs
+
